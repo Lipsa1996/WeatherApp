@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class WeatherService {
 
+  production!: boolean;
   constructor(private http:HttpClient) { }
 
   getWeatherData(cityName:string):Observable<WeatherData>
